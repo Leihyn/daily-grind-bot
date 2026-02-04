@@ -1,0 +1,140 @@
+{
+  "weekly_tasks": {
+    "1": [
+      "Star and watch Uniswap v4-core, Foundry, and Anchor repos on GitHub",
+      "Read CONTRIBUTING.md for Uniswap v4-core, Foundry, and Anchor",
+      "Join Uniswap Discord, Foundry Telegram, and Solana Tech Discord",
+      "Browse open issues labeled 'good first issue' on target repos — bookmark 3 potential ones",
+      "Complete Damn Vulnerable DeFi Challenge #1 and #2",
+      "Create Twitter/X account — set up bio, profile pic, and pinned tweet"
+    ],
+    "2": [
+      "Complete Damn Vulnerable DeFi Challenge #3 and #4",
+      "Complete Ethernaut Levels 1-5",
+      "Sign up for Code4rena and Sherlock accounts",
+      "Post first tweet — introduce yourself as a blockchain dev building in public",
+      "Browse Code4rena for upcoming contests — pick one to enter",
+      "Read 5 past audit reports on Solodit"
+    ],
+    "3": [
+      "Complete Damn Vulnerable DeFi Challenge #5 and #6",
+      "Complete Ethernaut Levels 6-10",
+      "Pick ONE 'good first issue' from target repos and comment your approach",
+      "Read 5 more audit reports on Solodit (10 total)",
+      "Post 3 tweets this week (Mon/Wed/Fri)",
+      "Follow 50 builders in your niche on Twitter"
+    ],
+    "4": [
+      "Complete Damn Vulnerable DeFi Challenge #7 and #8",
+      "Fork, branch, and start implementing your chosen GitHub issue",
+      "Enter your first Code4rena or Sherlock contest",
+      "Spend 5+ hours auditing contest code — submit at least 1 finding",
+      "Read 5 more audit reports on Solodit (15 total)",
+      "Post 3 tweets this week + reply thoughtfully to 5 tweets daily"
+    ],
+    "5": [
+      "Complete remaining Damn Vulnerable DeFi challenges",
+      "Open PR for your first OSS contribution with clear description",
+      "Continue security contest — submit at least 2 more findings (3 total)",
+      "Outline 3 article ideas and pick the easiest one to write first",
+      "Post 3 tweets + engage with 5 accounts daily",
+      "Review contest judging results when available — note what you missed"
+    ],
+    "6": [
+      "Complete all remaining Ethernaut levels",
+      "Respond to PR feedback and iterate until merged",
+      "Write first draft of your article",
+      "Read 5 more audit reports on Solodit (20 total)",
+      "Run all Sentiment Hook tests — ensure every test passes",
+      "Post 3 tweets + engage daily"
+    ],
+    "7": [
+      "Edit article — add code examples and diagrams",
+      "Run Slither analysis on Sentiment Hook — document all findings",
+      "Gas optimize Sentiment Hook — benchmark before and after",
+      "Implement emergency pause and admin security for Sentiment Hook",
+      "Post 3 tweets + engage daily",
+      "Browse new 'good first issue' labels for your 2nd OSS contribution"
+    ],
+    "8": [
+      "Publish your article on Medium or Mirror",
+      "Share article on Twitter and LinkedIn",
+      "Deploy Sentiment Hook to Base mainnet",
+      "Verify contract on Basescan",
+      "Update Sentiment repo README with mainnet addresses",
+      "Post 3 tweets about your deployment + engage daily"
+    ],
+    "9": [
+      "Pick and comment on a 2nd OSS issue",
+      "Enter your 2nd security contest",
+      "Outline your 2nd article",
+      "Create GitHub Release for Sentiment with deployment info",
+      "Start documenting DVDeFi solutions in security-portfolio repo",
+      "Post 3 tweets + engage daily"
+    ],
+    "10": [
+      "Fork, implement, and open PR for 2nd OSS contribution",
+      "Spend 10+ hours auditing 2nd contest — submit 3+ findings",
+      "Write first draft of 2nd article",
+      "Document Ethernaut solutions in security-portfolio repo",
+      "Set up security-portfolio repo structure (README, folders, methodology.md)",
+      "Post 3 tweets + engage daily"
+    ],
+    "11": [
+      "Iterate on 2nd OSS PR until merged",
+      "Edit and publish 2nd article",
+      "Start planning SDK/template repo — pick idea and outline structure",
+      "Publish 1st contest findings to security-portfolio repo",
+      "Review 2nd contest judging results — note improvements",
+      "Post 3 tweets + engage daily"
+    ],
+    "12": [
+      "Create SDK/template repo with README and folder structure",
+      "Implement 3 working examples in SDK",
+      "Set up CI/CD pipeline for SDK tests",
+      "Write audit methodology document for security-portfolio",
+      "Review all monthly metrics — adjust roadmap for Month 4",
+      "Post 3 tweets + engage daily"
+    ],
+    "13": [
+      "Pick and start 3rd OSS contribution",
+      "Enter next security contest",
+      "Outline and start writing 3rd article",
+      "Polish SDK — improve docs and add edge case handling",
+      "Specialize audit focus: pick one niche (hooks, bridges, staking, oracles)",
+      "Post 3 tweets + engage daily"
+    ],
+    "14": [
+      "Open PR for 3rd OSS contribution",
+      "Submit 3+ findings in current contest",
+      "Finish and publish 3rd article",
+      "Aim for first external star or fork on SDK repo",
+      "Add 2nd contest findings to security-portfolio",
+      "Post 3 tweets + engage daily"
+    ],
+    "15": [
+      "Iterate on 3rd OSS PR until merged — 3 total merged PRs",
+      "Enter next security contest — focus on your specialization niche",
+      "Review all success metrics from IMPORTANT.md — check off completed ones",
+      "Consider Nocturne Solana mainnet deployment — start devnet stress testing",
+      "Reach out to 3 protocol teams you've contributed to — ask about opportunities",
+      "Post 3 tweets + engage daily"
+    ],
+    "16": [
+      "Continue security contests — aim for first valid Medium+ finding",
+      "Write a Twitter thread breaking down a vulnerability you found",
+      "Update GitHub profile README with all achievements so far",
+      "Publish security-portfolio repo publicly",
+      "Network: join a Twitter Space about DeFi or security",
+      "Post 3 tweets + engage daily — review 4-month progress"
+    ]
+  },
+  "maintenance_tasks": [
+    "Enter this week's security contest or continue current one",
+    "Make an OSS contribution — PR, review, or issue triage",
+    "Write or edit a technical article or Twitter thread",
+    "Engage on Twitter: 3 posts + daily replies",
+    "Study 3 new audit reports on Solodit — document key learnings",
+    "Review weekly metrics: what did you ship? what's blocked?"
+  ]
+}
