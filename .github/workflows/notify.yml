@@ -21,6 +21,9 @@ on:
         description: "Run mode (notify or summary)"
         default: "notify"
 
+permissions:
+  contents: write
+
 jobs:
   notify:
     runs-on: ubuntu-latest
