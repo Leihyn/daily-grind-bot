@@ -1,7 +1,9 @@
 {
   "start_date": "2026-02-03",
   "completed": {},
-  "seen_issues": [],
-  "notify_index": 1,
+  "seen_issues": [
+    "https://github.com/OpenZeppelin/openzeppelin-contracts/issues/6305"
+  ],
+  "notify_index": 2,
   "last_update_id": 0
 }
