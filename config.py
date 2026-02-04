@@ -20,8 +20,8 @@ START_DATE = os.getenv("START_DATE", "2025-02-03")
 # Notification times (24h format, WAT)
 NOTIFY_HOURS = [7, 10, 13, 16, 19, 22]
 
-# State file path (use Railway volume mount if available)
-STATE_FILE = os.getenv("STATE_FILE", "/data/state.json")
+# State file path
+STATE_FILE = os.getenv("STATE_FILE", "/tmp/state.json")
 
 # Target repos for issue alerts
 TARGET_REPOS = [
