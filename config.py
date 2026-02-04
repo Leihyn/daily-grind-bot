@@ -20,8 +20,8 @@ START_DATE = os.getenv("START_DATE", "2025-02-03")
 # Notification times (24h format, WAT)
 NOTIFY_HOURS = [7, 10, 13, 16, 19, 22]
 
-# State file path
-STATE_FILE = os.getenv("STATE_FILE", "/tmp/state.json")
+# State file path (lives in repo, committed by GitHub Actions)
+STATE_FILE = os.getenv("STATE_FILE", "state.json")
 
 # Target repos for issue alerts
 TARGET_REPOS = [

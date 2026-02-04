@@ -1,0 +1,66 @@
+name: Daily Grind Notifications
+
+on:
+  schedule:
+    # All times in UTC. WAT = UTC+1, so subtract 1 hour.
+    # 7:00 WAT = 06:00 UTC
+    - cron: "0 6 * * *"
+    # 10:00 WAT = 09:00 UTC
+    - cron: "0 9 * * *"
+    # 13:00 WAT = 12:00 UTC
+    - cron: "0 12 * * *"
+    # 16:00 WAT = 15:00 UTC
+    - cron: "0 15 * * *"
+    # 19:00 WAT = 18:00 UTC
+    - cron: "0 18 * * *"
+    # 22:00 WAT = 21:00 UTC (end-of-day summary)
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode (notify or summary)"
+        default: "notify"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine run mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.mode }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 21 * * *" ]; then
+            echo "mode=summary" >> $GITHUB_OUTPUT
+          else
+            echo "mode=notify" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CALLMEBOT_PHONE: ${{ secrets.CALLMEBOT_PHONE }}
+          CALLMEBOT_API_KEY: ${{ secrets.CALLMEBOT_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          START_DATE: "2025-02-03"
+          STATE_FILE: "state.json"
+          RUN_MODE: ${{ steps.mode.outputs.mode }}
+        run: python run.py
+
+      - name: Commit state
+        run: |
+          git config user.name "daily-grind-bot"
+          git config user.email "bot@dailygrind"
+          git add state.json
+          git diff --staged --quiet || git commit -m "update state"
+          git push

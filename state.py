@@ -1,6 +1,6 @@
 """
 Persistence layer for tracking task completion.
-Uses a JSON file — mount a Railway volume at /data for persistence across deploys.
+State file lives in the repo — GitHub Actions commits it after each run.
 """
 
 import json
