@@ -19,7 +19,9 @@ DEFAULT_STATE = {
 
 
 def _ensure_dir():
-    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    dirname = os.path.dirname(STATE_FILE)
+    if dirname:
+        os.makedirs(dirname, exist_ok=True)
 
 
 def load_state() -> dict:
